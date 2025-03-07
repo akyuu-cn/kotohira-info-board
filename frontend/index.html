@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.webp" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kotohira 掲示板</title>
+
+  <script>
+    const isDark = localStorage.getItem("theme") || "light"
+    if (isDark === "dark") {
+      document.documentElement.classList.add("mdui-theme-dark")
+    }
+  </script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+
+</head>
+
+<body style="margin: 0;">
+
+  <div id="top-bar"></div>
+
+  <div id="app"></div>
+
+
+  <div style="text-align: center; margin-top: 2rem;opacity: 0.25;margin-bottom: 1rem;">
+    Potato Study Platform 2025
+  </div>
+
+
+
+  <script type="module" src="/src/main.ts"></script>
+
+</body>
+
+</html>
