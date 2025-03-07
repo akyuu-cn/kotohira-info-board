@@ -90,7 +90,9 @@ export function deleteAnnouncement(req: Request, res: Response) {
 export function newComment(req: Request, res: Response) {
     try {
         const { author, content } = req.body
-        if (!content || !author) {
+        if (list.comments.length > 1024) {
+            res.status(400).json({ "success": false, "message": "Too many comments" })
+        } else if (!content || !author) {
             res.status(400).json({ "success": false, "message": "Invalid comment" })
         } else {
             const comment: Comment = {
