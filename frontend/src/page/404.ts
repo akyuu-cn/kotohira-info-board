@@ -3,7 +3,7 @@ export const html = /* html */`
 <mdui-card style="width: 60rem;height: 20rem;display: flex; justify-content: center; align-items: center;">
   <div style="text-align: center;">
     <div style="font-size: 3rem;font-weight: bold;">404 Not Found</div>
-    <div style="font-size: 1rem;opacity: 0.5;margin-top: 0.5rem;">Potato Study Platform - Copyright © 2025</div>
+    <div style="font-size: 1rem;opacity: 0.5;margin-top: 0.5rem;">The page you are looking for does not exist.</div>
   </div>
 </mdui-card>
 </div>

@@ -1,0 +1,17 @@
+/* 滚动条的宽度 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* 滚动条的轨道 */
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+
